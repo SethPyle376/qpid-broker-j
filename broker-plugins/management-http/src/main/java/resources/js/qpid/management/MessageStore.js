@@ -49,6 +49,7 @@ define([
                 parent: this.modelObject,
                 type: this.modelObject.type
             };
+            this.operationArguments.includeHeaders = true;
             var query = lang.clone(this.operationArguments);
             if (kwArgs && kwArgs.hasOwnProperty("start"))
             {
