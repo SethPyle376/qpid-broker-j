@@ -508,6 +508,13 @@ define(["dojo/_base/declare",
                                     appendTimeZone: true
                                 });
                         }
+                    }, {
+                        label: "EMX System",
+                        field: "headers",
+                        formatter: function (value, object) {
+                            return value.emxSystem;
+                        },
+                        sortable: false
                     }
                 ]
             }, findNode("messagesGrid"));
